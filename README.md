@@ -1,6 +1,5 @@
 # How to install SSH server in Ubuntu
 
-## The procedure to install a ssh server in Ubuntu Linux is as follows:
 1. Open the terminal application for Ubuntu desktop.
 2. For remote Ubuntu server you must use BMC or KVM or IPMI tool to get console access
 3. Type `sudo apt-get install openssh-server`
@@ -10,6 +9,36 @@
 
 - Add user (linux)
   - sudo adduser `<username>`
+
+# How to install sudo
+
+1. apt update
+2. apt-get install sudo
+
+# How to install Python
+1. sudo apt-get install python 3
+2. sudo apt-get install python3-pip
+
+# How to install MySql
+1. Installing MySQL 8.0.X
+   1. sudo apt update
+   2. sudo apt install mysql-server
+2. Configuring MySQL
+   1. sudo mysql_secure_installation
+3. 	Creating a Dedicated MySQL User and Granting Privileges
+   1. 	sudo mysql or mysql -u root -p
+   2. mysql > CREATE USER 'sa'@'localhost' IDENTIFIED BY 'PASSWORD';
+   3. mysql > GRANT ALL PRIVILEGES ON *.* TO 'sa'@'localhost' WITH GRANT OPTION;
+   4. mysql > CREATE USER 'sa'@'%' IDENTIFIED BY 'PASSWORD';
+   5. mysql > GRANT ALL PRIVILEGES ON *.* TO 'sa'@'%' WITH GRANT OPTION;
+4.  Testing MySQL
+    1.  systemctl status mysql.service
+
+# How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))
+1. Go to app store into ubuntu
+2. Seach for mysql-workbench
+3. Click on permission
+4. Enable Read, add, change, or remove save password
 
 # Commands ubuntu
 - Updates the package lists for upgrades for packages that need upgrading
@@ -28,6 +57,9 @@
   - mkdir `<directory_name>`
 - Remove file
   - rm `<file_name>`
+- Remove directory
+  - rmdir `<directory>`
+  - rm -rf `<directory>` # Force
 - Rename file
   - mv `<old_file_name> <new_file_name>` # Example: mv oldfile.txt newfile.txt
 - Changes the user and/or group ownership of each given file
@@ -38,6 +70,8 @@
   - ll
 - Sets the permissions of files or directories
   - chmod +x `<filna_name>` # Example: chmod +x myfile.txt
+- Get Linux distribution
+  - cat /etc/os-release
 
 
 # Vi commands
