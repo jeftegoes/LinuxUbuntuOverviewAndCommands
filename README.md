@@ -45,6 +45,9 @@
   - sudo apt-get update
 - Get Ubuntu version
   - lsb_release -a
+- Install a package
+  - apt-get install `<package>`
+  - apt-get -y install `<package>` # -y assume YES
 
 # Commands linux
 - Get and display current user
@@ -63,6 +66,7 @@
 - Rename file
   - mv `<old_file_name> <new_file_name>` # Example: mv oldfile.txt newfile.txt
 - Changes the user and/or group ownership of each given file
+  - chown 1000:1000 `<file>`
   - chown 1000:1000 `<path>` -R # -R --Recursive
 - Who am I?
   - whoami
