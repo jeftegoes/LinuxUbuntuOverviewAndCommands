@@ -15,6 +15,9 @@
 1. apt update
 2. apt-get install sudo
 
+# How to install wget
+1. sudo apt-get install wget
+
 # How to install Python
 1. sudo apt-get install python 3
 2. sudo apt-get install python3-pip
@@ -40,10 +43,17 @@
 3. Click on permission
 4. Enable Read, add, change, or remove save password
 
+# How to install mono
+https://www.edivaldobrito.com.br/como-instalar-o-mono-no-ubuntu-debian-e-derivados/
+https://www.mono-project.com/download/stable/#download-lin
+https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
+
+
+
 # Commands ubuntu
 - Updates the package lists for upgrades for packages that need upgrading
   - sudo apt-get update
-- Get Ubuntu version
+- Get Ubuntu/Debian version
   - lsb_release -a
 - Install a package
   - apt-get install `<package>`
