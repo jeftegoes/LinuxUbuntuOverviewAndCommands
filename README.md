@@ -15,6 +15,9 @@
 1. apt update
 2. apt-get install sudo
 
+# How to install git ftp
+1. apt-get install git-ftp
+
 # How to install wget
 1. sudo apt-get install wget
 
@@ -86,6 +89,8 @@ https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
   - chmod +x `<filna_name>` # Example: chmod +x myfile.txt
 - Get Linux distribution
   - cat /etc/os-release
+- Get a list of all users 
+  - less /etc/passwd
 
 
 # Vi commands
