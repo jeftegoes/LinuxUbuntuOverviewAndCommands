@@ -11,9 +11,16 @@
   - sudo adduser `<username>`
 
 # How to install sudo
-
 1. apt update
 2. apt-get install sudo
+
+# How to install chromium
+1. sudo apt install chromium-browser
+
+# How to install VsCode
+1. sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code # or code-insiders
 
 # How to install git ftp
 1. apt-get install git-ftp
