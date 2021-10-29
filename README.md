@@ -25,8 +25,25 @@ sudo apt install code # or code-insiders
 # How to install git ftp
 1. apt-get install git-ftp
 
+# How to install and configure git
+1. sudo apt install git
+2. Configure:
+```
+git config --global user.name "Jefté Goes"
+git config --global user.email "jefte.goes.dev@outlook.com"
+```
+
+# How to install qBitTorrent
+1. sudo apt install qbittorrent
+
 # How to install wget
 1. sudo apt-get install wget
+
+# How to install telegram desktop
+1. sudo snap install telegram-desktop
+
+# How to install VLC
+1. sudo snap install vlc
 
 # How to install Python
 1. sudo apt-get install python 3
@@ -58,7 +75,11 @@ https://www.edivaldobrito.com.br/como-instalar-o-mono-no-ubuntu-debian-e-derivad
 https://www.mono-project.com/download/stable/#download-lin
 https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
 
-
+# How can accented characters
+1. Setting
+2. Region and language
+3. On the Input Sources Click on "+" button
+4. Choose English (United States) then English(US,alt. intl.).
 
 # Commands ubuntu
 - Updates the package lists for upgrades for packages that need upgrading
