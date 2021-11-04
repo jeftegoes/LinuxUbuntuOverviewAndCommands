@@ -120,7 +120,6 @@ https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
 - Get a list of all users 
   - less /etc/passwd
 
-
 # Vi commands
 
 | Command         | Purpose                                             |
