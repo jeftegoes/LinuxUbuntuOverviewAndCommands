@@ -1,4 +1,27 @@
-# How to install SSH server in Ubuntu
+# Docker commands and overview <!-- omit in toc -->
+
+## Contents <!-- omit in toc -->
+
+- [1. How to install SSH server in Ubuntu](#1-how-to-install-ssh-server-in-ubuntu)
+- [2. How to install sudo](#2-how-to-install-sudo)
+- [3. How to install chromium](#3-how-to-install-chromium)
+- [4. How to install VsCode](#4-how-to-install-vscode)
+- [5. How to install git ftp](#5-how-to-install-git-ftp)
+- [6. How to install and configure git](#6-how-to-install-and-configure-git)
+- [7. How to install qBitTorrent](#7-how-to-install-qbittorrent)
+- [8. How to install wget](#8-how-to-install-wget)
+- [9. How to install telegram desktop](#9-how-to-install-telegram-desktop)
+- [10. How to install VLC](#10-how-to-install-vlc)
+- [11. How to install Python](#11-how-to-install-python)
+- [12. How to install MySql](#12-how-to-install-mysql)
+- [13. How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))](#13-how-to-install-mysql-workbench-mysql-workbench-as-a-snap-package-sandboxed)
+- [14. How to install mono](#14-how-to-install-mono)
+- [15. How can accented characters](#15-how-can-accented-characters)
+- [16. Commands ubuntu](#16-commands-ubuntu)
+- [17. Commands linux](#17-commands-linux)
+- [18. Vi commands](#18-vi-commands)
+
+# 1. How to install SSH server in Ubuntu
 
 1. Open the terminal application for Ubuntu desktop.
 2. For remote Ubuntu server you must use BMC or KVM or IPMI tool to get console access
@@ -10,87 +33,105 @@
 - Add user (linux)
   - sudo adduser `<username>`
 
-# How to install sudo
+# 2. How to install sudo
+
 1. apt update
 2. apt-get install sudo
 
-# How to install chromium
+# 3. How to install chromium
+
 1. sudo apt install chromium-browser
 
-# How to install VsCode
-1. sudo apt install apt-transport-https
-sudo apt update
-sudo apt install code # or code-insiders
+# 4. How to install VsCode
 
-# How to install git ftp
+1. sudo apt install apt-transport-https
+   sudo apt update
+   sudo apt install code # or code-insiders
+
+# 5. How to install git ftp
+
 1. apt-get install git-ftp
 
-# How to install and configure git
+# 6. How to install and configure git
+
 1. sudo apt install git
 2. Configure:
+
 ```
 git config --global user.name "Jefté Goes"
 git config --global user.email "jefte.goes.dev@outlook.com"
 ```
 
-# How to install qBitTorrent
+# 7. How to install qBitTorrent
+
 1. sudo apt install qbittorrent
 
-# How to install wget
+# 8. How to install wget
+
 1. sudo apt-get install wget
 
-# How to install telegram desktop
+# 9. How to install telegram desktop
+
 1. sudo snap install telegram-desktop
 
-# How to install VLC
+# 10. How to install VLC
+
 1. sudo snap install vlc
 
-# How to install Python
+# 11. How to install Python
+
 1. sudo apt-get install python 3
 2. sudo apt-get install python3-pip
 
-# How to install MySql
-1. Installing MySQL 8.0.X
-   1. sudo apt update
-   2. sudo apt install mysql-server
-2. Configuring MySQL
-   1. sudo mysql_secure_installation
-3. 	Creating a Dedicated MySQL User and Granting Privileges
-   1. 	sudo mysql or mysql -u root -p
-   2. mysql > CREATE USER 'sa'@'localhost' IDENTIFIED BY 'PASSWORD';
-   3. mysql > GRANT ALL PRIVILEGES ON *.* TO 'sa'@'localhost' WITH GRANT OPTION;
-   4. mysql > CREATE USER 'sa'@'%' IDENTIFIED BY 'PASSWORD';
-   5. mysql > GRANT ALL PRIVILEGES ON *.* TO 'sa'@'%' WITH GRANT OPTION;
-4.  Testing MySQL
-    1.  systemctl status mysql.service
+# 12. How to install MySql
 
-# How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))
+1.  Installing MySQL 8.0.X
+    1. sudo apt update
+    2. sudo apt install mysql-server
+2.  Configuring MySQL
+    1. sudo mysql_secure_installation
+3.      Creating a Dedicated MySQL User and Granting Privileges
+    1.      sudo mysql or mysql -u root -p
+    2.  mysql > CREATE USER 'sa'@'localhost' IDENTIFIED BY 'PASSWORD';
+    3.  mysql > GRANT ALL PRIVILEGES ON _._ TO 'sa'@'localhost' WITH GRANT OPTION;
+    4.  mysql > CREATE USER 'sa'@'%' IDENTIFIED BY 'PASSWORD';
+    5.  mysql > GRANT ALL PRIVILEGES ON _._ TO 'sa'@'%' WITH GRANT OPTION;
+4.  Testing MySQL
+    1. systemctl status mysql.service
+
+# 13. How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))
+
 1. Go to app store into ubuntu
 2. Seach for mysql-workbench
 3. Click on permission
 4. Enable Read, add, change, or remove save password
 
-# How to install mono
+# 14. How to install mono
+
 https://www.edivaldobrito.com.br/como-instalar-o-mono-no-ubuntu-debian-e-derivados/
 https://www.mono-project.com/download/stable/#download-lin
 https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
 
-# How can accented characters
+# 15. How can accented characters
+
 1. Setting
 2. Region and language
 3. On the Input Sources Click on "+" button
 4. Choose English (United States) then English(US,alt. intl.).
 
-# Commands ubuntu
+# 16. Commands ubuntu
+
 - Updates the package lists for upgrades for packages that need upgrading
   - sudo apt-get update
 - Get Ubuntu/Debian version
   - lsb_release -a
+  - cat /etc/issue
 - Install a package
   - apt-get install `<package>`
   - apt-get -y install `<package>` # -y assume YES
 
-# Commands linux
+# 17. Commands linux
+
 - Get and display current user
   - id
 - Get and display ip
@@ -117,13 +158,13 @@ https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
   - chmod +x `<filna_name>` # Example: chmod +x myfile.txt
 - Get Linux distribution
   - cat /etc/os-release
-- Get a list of all users 
+- Get a list of all users
   - less /etc/passwd
 
-# Vi commands
+# 18. Vi commands
 
 | Command         | Purpose                                             |
-|-----------------|-----------------------------------------------------|
+| --------------- | --------------------------------------------------- |
 | $ vi <filename> | Open or edit a file.                                |
 | i               | Switch to Insert mode.                              |
 | Esc             | Switch to Command mode.                             |
