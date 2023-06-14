@@ -1,4 +1,4 @@
-# Docker commands and overview <!-- omit in toc -->
+# Linux and Ubuntu overview and commands <!-- omit in toc -->
 
 ## Contents <!-- omit in toc -->
 
@@ -90,8 +90,8 @@ git config --global user.email "jefte.goes.dev@outlook.com"
     2. sudo apt install mysql-server
 2.  Configuring MySQL
     1. sudo mysql_secure_installation
-3.      Creating a Dedicated MySQL User and Granting Privileges
-    1.      sudo mysql or mysql -u root -p
+3.       Creating a Dedicated MySQL User and Granting Privileges
+    1.       sudo mysql or mysql -u root -p
     2.  mysql > CREATE USER 'sa'@'localhost' IDENTIFIED BY 'PASSWORD';
     3.  mysql > GRANT ALL PRIVILEGES ON _._ TO 'sa'@'localhost' WITH GRANT OPTION;
     4.  mysql > CREATE USER 'sa'@'%' IDENTIFIED BY 'PASSWORD';
