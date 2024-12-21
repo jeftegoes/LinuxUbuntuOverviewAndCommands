@@ -27,7 +27,29 @@ snap install insomnia
 echo "Installing conky..."
 apt install conky-all -y
 
+echo "Installing video4linux..."
+# sudo apt install v4l-utils -y test after...
+
+echo "Installing guvcview..."
+sudo apt install guvcview -y
+
+echo "Installing spotify..."
+snap install spotify
+
+echo "Installing thunderbird..."
+sudo apt install thunderbird
+
+echo "Installing GNOME Tweaks Tool..."
+apt install gnome-tweaks -y
+
+echo "Installing DBeaver Community..."
+snap install dbeaver-ce
 # ubuntu
+
 # edge
+
+# docker ce
+# docker desktop
+# docker compose
 
 echo "Finish installations."
