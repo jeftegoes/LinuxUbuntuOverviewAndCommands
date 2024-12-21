@@ -7,7 +7,6 @@
 - [3. How to install chromium](#3-how-to-install-chromium)
 - [4. How to install VsCode](#4-how-to-install-vscode)
 - [5. How to install git ftp](#5-how-to-install-git-ftp)
-- [6. How to install and configure git](#6-how-to-install-and-configure-git)
 - [7. How to install qBitTorrent](#7-how-to-install-qbittorrent)
 - [8. How to install wget](#8-how-to-install-wget)
 - [9. How to install telegram desktop](#9-how-to-install-telegram-desktop)
@@ -51,16 +50,6 @@
 # 5. How to install git ftp
 
 1. apt-get install git-ftp
-
-# 6. How to install and configure git
-
-1. sudo apt install git
-2. Configure:
-
-```
-git config --global user.name "Jefté Goes"
-git config --global user.email "jefte.goes.dev@outlook.com"
-```
 
 # 7. How to install qBitTorrent
 
