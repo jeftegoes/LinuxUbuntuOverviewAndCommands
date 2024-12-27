@@ -19,37 +19,52 @@ echo "Installing IntelliJ IDEA..."
 snap install intellij-idea-community --classic
 
 echo "Installing notepad++..."
-snap install notepad-plus-plus
+# snap install notepad-plus-plus its use Wine...
 
 echo "Installing insomnia..."
 snap install insomnia
 
 echo "Installing conky..."
-apt install conky-all -y
+apt-get install conky-all -y
 
 echo "Installing video4linux..."
 # sudo apt install v4l-utils -y test after...
 
 echo "Installing guvcview..."
-sudo apt install guvcview -y
+apt-get install guvcview -y
 
 echo "Installing spotify..."
 snap install spotify
 
 echo "Installing thunderbird..."
-sudo apt install thunderbird
+apt-get install thunderbird
 
 echo "Installing GNOME Tweaks Tool..."
-apt install gnome-tweaks -y
+apt-get install gnome-tweaks -y
 
 echo "Installing DBeaver Community..."
 snap install dbeaver-ce
+
+echo "Installing draw.io..."
+snap install drawio --devmode
+# rm -rf ~/.cache/fontconfig 
+# fc-cache -r -v
+
+echo "Installing maven..."
+apt-get install -y maven
+
+echo "Installing hardinfo..."
+apt-get install hardinfo -y
+
+echo "Installing Node.JS..."
+snap install node --classic
+
+# java openjdk 23
 # ubuntu
-
 # edge
-
 # docker ce
 # docker desktop
 # docker compose
+# virtualbox
 
 echo "Finish installations."

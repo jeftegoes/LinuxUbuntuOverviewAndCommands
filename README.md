@@ -7,18 +7,17 @@
 - [3. How to install chromium](#3-how-to-install-chromium)
 - [4. How to install VsCode](#4-how-to-install-vscode)
 - [5. How to install git ftp](#5-how-to-install-git-ftp)
-- [7. How to install qBitTorrent](#7-how-to-install-qbittorrent)
-- [8. How to install wget](#8-how-to-install-wget)
-- [9. How to install telegram desktop](#9-how-to-install-telegram-desktop)
-- [10. How to install VLC](#10-how-to-install-vlc)
-- [11. How to install Python](#11-how-to-install-python)
-- [12. How to install MySql](#12-how-to-install-mysql)
-- [13. How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))](#13-how-to-install-mysql-workbench-mysql-workbench-as-a-snap-package-sandboxed)
-- [14. How to install mono](#14-how-to-install-mono)
-- [15. How can accented characters](#15-how-can-accented-characters)
-- [16. Commands ubuntu](#16-commands-ubuntu)
-- [17. Commands linux](#17-commands-linux)
-- [18. Vi commands](#18-vi-commands)
+- [6. How to install qBitTorrent](#6-how-to-install-qbittorrent)
+- [7. How to install wget](#7-how-to-install-wget)
+- [8. How to install telegram desktop](#8-how-to-install-telegram-desktop)
+- [9. How to install VLC](#9-how-to-install-vlc)
+- [10. How to install Python](#10-how-to-install-python)
+- [11. How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))](#11-how-to-install-mysql-workbench-mysql-workbench-as-a-snap-package-sandboxed)
+- [12. How to install mono](#12-how-to-install-mono)
+- [13. How can accented characters](#13-how-can-accented-characters)
+- [14. Commands ubuntu](#14-commands-ubuntu)
+- [15. Commands linux](#15-commands-linux)
+- [16. Vi commands](#16-vi-commands)
 
 # 1. How to install SSH server in Ubuntu
 
@@ -51,64 +50,48 @@
 
 1. apt-get install git-ftp
 
-# 7. How to install qBitTorrent
+# 6. How to install qBitTorrent
 
 1. sudo apt install qbittorrent
 
-# 8. How to install wget
+# 7. How to install wget
 
 1. sudo apt-get install wget
 
-# 9. How to install telegram desktop
+# 8. How to install telegram desktop
 
 1. sudo snap install telegram-desktop
 
-# 10. How to install VLC
+# 9. How to install VLC
 
 1. sudo snap install vlc
 
-# 11. How to install Python
+# 10. How to install Python
 
 1. sudo apt-get install python 3
 2. sudo apt-get install python3-pip
 
-# 12. How to install MySql
-
-1.  Installing MySQL 8.0.X
-    1. sudo apt update
-    2. sudo apt install mysql-server
-2.  Configuring MySQL
-    1. sudo mysql_secure_installation
-3.       Creating a Dedicated MySQL User and Granting Privileges
-    1.       sudo mysql or mysql -u root -p
-    2.  mysql > CREATE USER 'sa'@'localhost' IDENTIFIED BY 'PASSWORD';
-    3.  mysql > GRANT ALL PRIVILEGES ON _._ TO 'sa'@'localhost' WITH GRANT OPTION;
-    4.  mysql > CREATE USER 'sa'@'%' IDENTIFIED BY 'PASSWORD';
-    5.  mysql > GRANT ALL PRIVILEGES ON _._ TO 'sa'@'%' WITH GRANT OPTION;
-4.  Testing MySQL
-    1. systemctl status mysql.service
-
-# 13. How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))
+# 11. How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))
 
 1. Go to app store into ubuntu
 2. Seach for mysql-workbench
 3. Click on permission
 4. Enable Read, add, change, or remove save password
 
-# 14. How to install mono
+# 12. How to install mono
 
 https://www.edivaldobrito.com.br/como-instalar-o-mono-no-ubuntu-debian-e-derivados/
 https://www.mono-project.com/download/stable/#download-lin
 https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
 
-# 15. How can accented characters
+# 13. How can accented characters
 
 1. Setting
 2. Region and language
 3. On the Input Sources Click on "+" button
 4. Choose English (United States) then English(US,alt. intl.).
 
-# 16. Commands ubuntu
+# 14. Commands ubuntu
 
 - Updates the package lists for upgrades for packages that need upgrading
   - sudo apt-get update
@@ -119,7 +102,7 @@ https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
   - apt-get install `<package>`
   - apt-get -y install `<package>` # -y assume YES
 
-# 17. Commands linux
+# 15. Commands linux
 
 - Get and display current user
   - id
@@ -150,7 +133,7 @@ https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
 - Get a list of all users
   - less /etc/passwd
 
-# 18. Vi commands
+# 16. Vi commands
 
 | Command         | Purpose                                             |
 | --------------- | --------------------------------------------------- |
