@@ -1,10 +1,14 @@
 echo "update the package index files on the system..."
 apt-get update
+apt-get upgrade
 
 echo "Installing apps..."
 
 echo "Installing curl..."
 apt-get install curl
+
+echo "Installing wget..."
+apt-get install wget gpg
 
 echo "Installing certificates..."
 apt-get install ca-certificates
@@ -12,17 +16,24 @@ apt-get install ca-certificates
 echo "Installing github..."
 apt-get install git -y
 
-echo "Installing VsCode..."
-snap install code --classic
+echo "Installing VsCode..." # https://code.visualstudio.com/docs/setup/linux
+echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-selections
+wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
+install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
+echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
+rm -f packages.microsoft.gpg
+apt install apt-transport-https
+apt update
+apt install code
+
 
 echo "Installing IntelliJ IDEA..."
 snap install intellij-idea-community --classic
 
-echo "Installing notepad++..."
-# snap install notepad-plus-plus its use Wine...
-
-echo "Installing insomnia..."
-snap install insomnia
+echo "Installing insomnia..." # https://docs.insomnia.rest/insomnia/install
+curl -1sLf 'https://packages.konghq.com/public/insomnia/setup.deb.sh' \ | sudo -E distro=ubuntu codename=focal bash
+apt-get update
+apt-get install insomnia
 
 echo "Installing conky..."
 apt-get install conky-all -y
@@ -53,18 +64,19 @@ snap install drawio --devmode
 echo "Installing maven..."
 apt-get install -y maven
 
-echo "Installing hardinfo..."
-apt-get install hardinfo -y
-
 echo "Installing Node.JS..."
 snap install node --classic
 
-# java openjdk 23
-# ubuntu
-# edge
+echo "Installing lm-sensors..."
+apt install lm-sensors
+
+# java openjdk 23   https://www.oracle.com/br/java/technologies/downloads/
+# edge https://www.microsoft.com/en-us/edge/business/download?form=MA13H4&cs=2899521137
 # docker ce
 # docker desktop
 # docker compose
+echo "Installing virtualbox and dependencies..."
+apt-get install virtualbox-ext-pack
 # virtualbox
 
 echo "Finish installations."
