@@ -16,6 +16,10 @@ apt-get install ca-certificates
 echo "Installing github..."
 apt-get install git -y
 
+echo "Installing AWS CLI..."
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+
 echo "Installing VsCode..." # https://code.visualstudio.com/docs/setup/linux
 echo "code code/add-microsoft-repo boolean true" | sudo debconf-set-selections
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -67,8 +71,10 @@ apt-get install -y maven
 echo "Installing Node.JS..."
 snap install node --classic
 
-echo "Installing lm-sensors..."
-apt install lm-sensors
+echo "Installing lm-sensors and fancontrol..."
+apt-get install lm-sensors
+apt-get install fancontrol
+
 
 
 # docker ce
@@ -88,13 +94,15 @@ apt-get update
 apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin -Y
 
 # docker desktop - Prerequisites https://docs.docker.com/desktop/setup/install/linux/ubuntu/
-apt install gnome-terminal
+apt-get install gnome-terminal
 
 # java openjdk 23   https://www.oracle.com/br/java/technologies/downloads/
 # edge https://www.microsoft.com/en-us/edge/business/download?form=MA13H4&cs=2899521137
-echo "Installing virtual
-box and dependencies..."
-apt-get install virtualbox-ext-pack
-# virtualbox
+
+echo "Installing Virtual Machine Manager..."
+apt-get install virt-manager -y
+
+echo "Installing Meld..."
+sudo apt-get install meld
 
 echo "Finish installations."
