@@ -23,6 +23,8 @@ apt-get install ca-certificates
 echo "Installing GNU Privacy Guard..."
 apt-get install gnupg
 
+echo "Installing Gnome terminal for Ubuntu Desktop..."
+sudo apt install gnome-terminal
 
 echo "Installing Ping..."
 apt-get install iputils-ping -y
@@ -49,8 +51,9 @@ apt-get install code
 
 
 echo "Installing IntelliJ IDEA..."
-snap install intellij-idea-community --classic
-
+# https://www.jetbrains.com/help/idea/installation-guide.html#standalone_linux
+# cd /opt
+# IntelliJ -> Tools -> Create desktop entry
 
 echo "Installing insomnia..." # https://docs.insomnia.rest/insomnia/install
 curl -1sLf 'https://packages.konghq.com/public/insomnia/setup.deb.sh' \ | sudo -E distro=ubuntu codename=focal bash
@@ -70,7 +73,7 @@ echo "Installing guvcview..."
 apt-get install guvcview -y
 
 
-echo "Installing spotify..."
+echo "Installing spotify..." # https://www.spotify.com/br-en/download/linux/
 curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
 echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
 apt-get update
@@ -85,7 +88,7 @@ apt-get install gnome-tweaks -y
 
 
 echo "Installing DBeaver Community..."
-sudo  wget -O /usr/share/keyrings/dbeaver.gpg.key https://dbeaver.io/debs/dbeaver.gpg.key
+wget -O /usr/share/keyrings/dbeaver.gpg.key https://dbeaver.io/debs/dbeaver.gpg.key
 echo "deb [signed-by=/usr/share/keyrings/dbeaver.gpg.key] https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
 apt-get update
 apt-get install dbeaver-ce
@@ -117,9 +120,6 @@ apt-get install fancontrol
 install -m 0755 -d /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 chmod a+r /etc/apt/keyrings/docker.asc
-
-
-# Add the repository to Apt sources:
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \

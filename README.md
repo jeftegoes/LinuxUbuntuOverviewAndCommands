@@ -4,20 +4,17 @@
 
 - [1. How to install SSH server in Ubuntu](#1-how-to-install-ssh-server-in-ubuntu)
 - [2. How to install sudo](#2-how-to-install-sudo)
-- [3. How to install chromium](#3-how-to-install-chromium)
-- [4. How to install VsCode](#4-how-to-install-vscode)
-- [5. How to install git ftp](#5-how-to-install-git-ftp)
-- [6. How to install qBitTorrent](#6-how-to-install-qbittorrent)
-- [7. How to install wget](#7-how-to-install-wget)
-- [8. How to install telegram desktop](#8-how-to-install-telegram-desktop)
-- [9. How to install VLC](#9-how-to-install-vlc)
-- [10. How to install Python](#10-how-to-install-python)
-- [11. How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))](#11-how-to-install-mysql-workbench-mysql-workbench-as-a-snap-package-sandboxed)
-- [12. How to install mono](#12-how-to-install-mono)
-- [13. How can accented characters](#13-how-can-accented-characters)
-- [14. Commands ubuntu](#14-commands-ubuntu)
-- [15. Commands linux](#15-commands-linux)
-- [16. Vi commands](#16-vi-commands)
+- [3. How to install git ftp](#3-how-to-install-git-ftp)
+- [4. How to install qBitTorrent](#4-how-to-install-qbittorrent)
+- [5. How to install telegram desktop](#5-how-to-install-telegram-desktop)
+- [6. How to install VLC](#6-how-to-install-vlc)
+- [7. How to install Python](#7-how-to-install-python)
+- [8. How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))](#8-how-to-install-mysql-workbench-mysql-workbench-as-a-snap-package-sandboxed)
+- [9. How to install mono](#9-how-to-install-mono)
+- [10. How can accented characters](#10-how-can-accented-characters)
+- [11. Commands ubuntu](#11-commands-ubuntu)
+- [12. Commands linux](#12-commands-linux)
+- [13. Vi commands](#13-vi-commands)
 
 # 1. How to install SSH server in Ubuntu
 
@@ -36,62 +33,48 @@
 1. apt update
 2. apt-get install sudo
 
-# 3. How to install chromium
-
-1. sudo apt install chromium-browser
-
-# 4. How to install VsCode
-
-1. sudo apt install apt-transport-https
-   sudo apt update
-   sudo apt install code # or code-insiders
-
-# 5. How to install git ftp
+# 3. How to install git ftp
 
 1. apt-get install git-ftp
 
-# 6. How to install qBitTorrent
+# 4. How to install qBitTorrent
 
 1. sudo apt install qbittorrent
 
-# 7. How to install wget
-
-1. sudo apt-get install wget
-
-# 8. How to install telegram desktop
+# 5. How to install telegram desktop
 
 1. sudo snap install telegram-desktop
 
-# 9. How to install VLC
+# 6. How to install VLC
 
 1. sudo snap install vlc
 
-# 10. How to install Python
+# 7. How to install Python
 
 1. sudo apt-get install python 3
 2. sudo apt-get install python3-pip
 
-# 11. How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))
+# 8. How to install MySql Workbench (MySQL Workbench as a Snap package (sandboxed))
 
 1. Go to app store into ubuntu
 2. Seach for mysql-workbench
 3. Click on permission
 4. Enable Read, add, change, or remove save password
 
-# 12. How to install mono
+# 9. How to install mono
 
 https://www.edivaldobrito.com.br/como-instalar-o-mono-no-ubuntu-debian-e-derivados/
 https://www.mono-project.com/download/stable/#download-lin
 https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
 
-# 13. How can accented characters
+# 10. How can accented characters
 
 1. Setting
 2. Region and language
 3. On the Input Sources Click on "+" button
 4. Choose English (United States) then English(US,alt. intl.).
 
-# 14. Commands ubuntu
+# 11. Commands ubuntu
 
 - Updates the package lists for upgrades for packages that need upgrading
   - sudo apt-get update
@@ -102,7 +85,7 @@ https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
   - apt-get install `<package>`
   - apt-get -y install `<package>` # -y assume YES
 
-# 15. Commands linux
+# 12. Commands linux
 
 - Get and display current user
   - id
@@ -133,7 +116,7 @@ https://linuxize.com/post/how-to-install-mono-on-ubuntu-18-04/
 - Get a list of all users
   - less /etc/passwd
 
-# 16. Vi commands
+# 13. Vi commands
 
 | Command         | Purpose                                             |
 | --------------- | --------------------------------------------------- |
