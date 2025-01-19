@@ -23,13 +23,20 @@ apt-get install ca-certificates
 echo "Installing GNU Privacy Guard..."
 apt-get install gnupg
 
+
 echo "Installing Gnome terminal for Ubuntu Desktop..."
 sudo apt install gnome-terminal
+mv vscode.nemo_action ~/.local/share/nemo/actions/vscode.nemo_action
 
 echo "Installing Ping..."
 apt-get install iputils-ping -y
 
 echo "Installing develop environment apps..."
+
+echo "Installing nemo..."
+apt-get install nemo
+xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
+
 
 echo "Installing github..."
 apt-get install git -y
@@ -63,7 +70,7 @@ apt-get install insomnia
 
 echo "Installing conky..."
 apt-get install conky-all -y
-
+mv conky.conf /etc/conky/conky.conf
 
 echo "Installing video4linux..."
 # sudo apt install v4l-utils -y test after...
