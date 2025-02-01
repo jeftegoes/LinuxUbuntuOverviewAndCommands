@@ -112,8 +112,9 @@ apt-get install maven -y
 
 
 echo "Installing Node.JS..."
-snap install node --classic
-
+apt update
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+apt install -y nodejs
 
 echo "Installing lm-sensors and fancontrol..."
 apt-get install lm-sensors
@@ -148,5 +149,7 @@ apt-get install virt-manager -y
 echo "Installing Meld..."
 apt-get install meld
 
+echo "Installing Liquibase..."
+https://docs.liquibase.com/start/install/liquibase-linux-debian-ubuntu.html
 
 echo "Finish installations."
