@@ -28,6 +28,9 @@ echo "Installing Gnome terminal for Ubuntu Desktop..."
 sudo apt install gnome-terminal
 mv vscode.nemo_action ~/.local/share/nemo/actions/vscode.nemo_action
 
+echo "Installing Gnome Shell..."
+apt install gnome-shell-extension-manager
+
 echo "Installing Ping..."
 apt-get install iputils-ping -y
 
@@ -145,11 +148,21 @@ apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docke
 echo "Installing Virtual Machine Manager..."
 apt-get install virt-manager -y
 
+echo "Installing .NET 8..."
+sudo apt-get install -y dotnet-sdk-8.0
 
 echo "Installing Meld..."
 apt-get install meld
 
 echo "Installing Liquibase..."
 https://docs.liquibase.com/start/install/liquibase-linux-debian-ubuntu.html
+
+echo "Installing FileZilla..."
+apt-get install filezilla
+
+echo "Installing Remmina"
+apt-add-repository ppa:remmina-ppa-team/remmina-next
+apt-get update
+apt-get install remmina remmina-plugin-rdp remmina-plugin-secret
 
 echo "Finish installations."
