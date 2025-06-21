@@ -32,6 +32,9 @@ echo "Installing Gnome Shell..."
 apt install gnome-shell-extension-manager
 
 echo "Installing Ping..."
+apt-get install net-tools -y
+
+echo "Installing Ping..."
 apt-get install iputils-ping -y
 
 echo "Installing develop environment apps..."
@@ -164,5 +167,14 @@ echo "Installing Remmina"
 apt-add-repository ppa:remmina-ppa-team/remmina-next
 apt-get update
 apt-get install remmina remmina-plugin-rdp remmina-plugin-secret
+
+echo "Installing Audacity"
+apt-get install audacity
+
+echo "Installing Wireshark"
+add-apt-repository ppa:wireshark-dev/stable
+apt-get install wireshark
+dpkg-reconfigure wireshark-common
+adduser $USER wireshark
 
 echo "Finish installations."
